@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Réserve Naturelle de Port-Cros</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Notre CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav
+      class="navbar p-4 text-white text-start navbar-expand-lg navbar-dark bg-dark sticky-top"
+    >
+      <div class="container">
+        <h1 class="navbar-brand fw-bold" href="#">
+          Réserve naturel de Port-Cros
+        </h1>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Afficher le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#accueil"> Accueil </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos"> À propos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#faune-flore"> Faune &amp; Flore </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#activites"> Activités </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#galerie"> Galerie </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <header
+      id="accueil"
+      class="hero d-flex flex-column justify-content-center align-items-center text-center text-white"
+    >
+      <div class="container">
+        <h1 class="display-2 fw-bold">Bienvenue à Port-Cros</h1>
+
+        <p class="lead">
+          Découvrez la beauté préservée de cette île méditerranéenne
+        </p>
+
+        <a href="#apropos" class="btn btn-light btn-lg mt-3"> Découvrir </a>
+      </div>
+    </header>
+
+    <!-- =========================================
+         À PROPOS
+    ========================================== -->
+
+    <section id="apropos" class="py-5">
+      <div class="container my-5 col-md-6 col-sm-10 shadow-lg rounded">
+        <div class="d-flex flex-column align-items-center my-5">
+          <h2 class="display-5 fw-bold my-4">À propos</h2>
+
+          <div class="row">
+            <div class="col-md-10 offset-md-1 mt-3"></div>
+                <p class="lead text-center">
+                La Réserve Naturelle de Port-Cros est un sanctuaire pour la
+                biodiversité méditerranéenne.
+                </p>
+
+                <p class="text-center">
+                Située sur l'île de Port-Cros, elle offre un environnement protégé
+                pour de nombreuses espèces animales et végétales.
+                </p>
+
+                <img
+                src="https://bootstrap.codabee.com/PortCros/assets/carte.jpg"
+                alt="Carte du parc national de Port-Cros"
+                class="img-fluid rounded shadow"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FAUNE & FLORE
+    ========================================== -->
+
+    <section id="faune-flore" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Faune et Flore</h2>
+
+          <p class="text-muted">
+            Une biodiversité exceptionnelle au cœur de la Méditerranée.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- FAUNE -->
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/merou.jpg"
+                class="card-img-top"
+                alt="Faune de Port-Cros"
+              />
+
+              <div class="card-body p-4">
+                <h3 class="card-title">Faune</h3>
+
+                <p class="card-text">
+                  L'île abrite une variété d'oiseaux marins, de reptiles et de
+                  mammifères. Les eaux environnantes sont riches en vie marine,
+                  avec des espèces comme le mérou et la murène.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FLORE -->
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/flore.jpg"
+                class="card-img-top"
+                alt="Flore de Port-Cros"
+              />
+
+              <div class="card-body p-4">
+                <h3 class="card-title">Flore</h3>
+
+                <p class="card-text">
+                  La flore de Port-Cros est typiquement méditerranéenne, avec
+                  des espèces comme le pin d'Alep, le chêne vert et le romarin.
+                  Les sentiers de l'île offrent de magnifiques paysages de
+                  maquis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         ACTIVITÉS
+    ========================================== -->
+
+    <section id="activites" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Activités</h2>
+
+          <p class="text-muted">Découvrez Port-Cros autrement.</p>
+        </div>
+
+        <div class="row">
+          <!-- RANDONNÉE -->
+
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card activity-card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/rando.jpg"
+                class="card-img-top"
+                alt="Randonnée à Port-Cros"
+              />
+
+              <div class="card-body bg-success">
+                <h3 class="h4">Randonnée</h3>
+
+                <p class="card-text">
+                  Explorez les sentiers balisés de l'île et découvrez des vues
+                  imprenables sur la mer Méditerranée.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLONGÉE -->
+
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card activity-card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/plongee.jpg"
+                class="card-img-top"
+                alt="Plongée à Port-Cros"
+              />
+
+              <div class="card-body bg-primary">
+                <h3 class="h4">Plongée</h3>
+
+                <p class="card-text">
+                  Plongez dans les eaux cristallines pour découvrir la richesse
+                  de la vie sous-marine.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FARNIENTE -->
+
+          <div class="col-md-6 col-lg-3 mt-3">
+            <div class="card activity-card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/plage.jpeg"
+                class="card-img-top"
+                alt="Farniente à Port-Cros"
+              />
+
+              <div class="card-body bg-warning">
+                <h3 class="h4">Farniente</h3>
+
+                <p class="card-text">
+                  Le plaisir de ne faire absolument rien et profiter d'un climat
+                  méditerranéen et d'une eau cristalline.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PADDLE -->
+
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card activity-card h-100 border-0 shadow-sm">
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/paddle.jpeg"
+                class="card-img-top"
+                alt="Paddle à Port-Cros"
+              />
+
+              <div class="card-body bg-info">
+                <h3 class="h4">Paddle</h3>
+
+                <p class="card-text">
+                  Explorez des endroits inaccessibles à pied en Paddle et
+                  découvrez les îles d'Hyères sous un autre angle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         GALERIE
+    ========================================== -->
+
+    <section id="galerie" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Galerie</h2>
+
+          <p class="text-muted">Quelques paysages de Port-Cros.</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a
+              href="https://bootstrap.codabee.com/PortCros/assets/img-1.jpg"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            >
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/img-1.jpg"
+                alt="Paysage de Port-Cros"
+                class="img-fluid rounded shadow-sm gallery-image"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://bootstrap.codabee.com/PortCros/assets/img-2.jpg"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            >
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/img-2.jpg"
+                alt="Paysage de Port-Cros"
+                class="img-fluid rounded shadow-sm gallery-image"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://bootstrap.codabee.com/PortCros/assets/img-3.jpg"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            >
+              <img
+                src="https://bootstrap.codabee.com/PortCros/assets/img-3.jpg"
+                alt="Paysage de Port-Cros"
+                class="img-fluid rounded shadow-sm gallery-image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         AVERTISSEMENT
+    ========================================== -->
+
+    <section class="py-5">
+      <div class="container bg-secondary p-5 my-2 border-0 col-md-8 rounded">
+        <h2 class="text-white text-center pb-5 fw-bold">Attention</h2>
+        <div class="row">
+            <div class="col-lg-6 alert alert-danger border-0">
+                <p class="mb-2 text-center">
+                    <em>
+                        Ce site web n'est en aucun cas un site officiel du parc national de
+                        Port-Cros. <br>
+                        Son but est uniquement de mettre en pratique les concepts appris au
+                        cours de notre formation dédiée à la pratique de Bootstrap.
+                    </em>
+                </p>
+            </div>
+
+          <div class="col-lg-6">
+            <strong>Retrouvez la formation sur codabee</strong>
+            <a
+              href="https://codabee.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fw-bold"
+            >
+            <img
+            src="https://bootstrap.codabee.com/PortCros/assets/Logo%20Codabee%20fond%20blanc.png"
+            class="img-fluid"
+            alt=""
+            />
+            </a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">
+          &copy; <span class="year"></span>
+          Formation Codabee Bootstrap. Ce site est un exemple d'utilisation de
+          Bootstrap.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         MODAL GALERIE
+    ========================================== -->
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+
+            <img
+              src=""
+              alt="Image agrandie"
+              class="img-fluid rounded"
+              id="modalImage"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Notre JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

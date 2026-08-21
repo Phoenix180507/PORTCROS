@@ -1,0 +1,480 @@
+/* =========================================================
+   PORT-CROS
+   Feuille de style
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --primary: #1f4d3a;
+    --primary-dark: #16382b;
+    --secondary: #d8a94e;
+
+    --dark: #212529;
+    --light: #f5f5f2;
+    --white: #ffffff;
+    --gray: #e9ecefea;
+
+    --text: #333333;
+    --muted: #6c757d;
+
+    --radius: 8px;
+
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav {
+    gap: 0.4rem;
+}
+
+.nav-link {
+    position: relative;
+    transition: color var(--transition);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--white);
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--secondary);
+
+    transform: translateX(-50%);
+
+    transition: width var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: calc(100vh - 70px);
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://bootstrap.codabee.com/PortCros/assets/port-cros.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.hero p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.hero .btn {
+    padding: 0.75rem 2rem;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+section {
+    overflow: hidden;
+}
+
+section h2 {
+    color: var(--primary-dark);
+}
+
+section .lead {
+    color: #555;
+}
+
+
+/* =========================================================
+   À PROPOS
+========================================================= */
+
+#apropos {
+    background: var(--white);
+}
+
+#apropos img {
+    width: 100%;
+
+    max-height: 450px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+#apropos img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.card {
+    overflow: hidden;
+
+    border-radius: var(--radius);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-img-top {
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.card-body {
+    background: var(--white);
+}
+
+.card-title {
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+.card-text {
+    color: #555;
+}
+
+
+/* =========================================================
+   FAUNE & FLORE
+========================================================= */
+
+#faune-flore {
+    background-color: var(--gray) !important;
+}
+
+#faune-flore .card-img-top {
+    height: 320px;
+}
+
+
+/* =========================================================
+   ACTIVITÉS
+========================================================= */
+
+.activity-card {
+    border: none;
+}
+
+.activity-card .card-img-top {
+    height: 220px;
+}
+
+.activity-card .card-body {
+    padding: 1.5rem;
+}
+
+.activity-card h3 {
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   GALERIE
+========================================================= */
+
+#galerie {
+    background-color: var(--light) !important;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition),
+        filter var(--transition),
+        box-shadow var(--transition);
+}
+
+.gallery-image:hover {
+    transform: scale(1.025);
+
+    filter: brightness(0.85);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18) !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background-color: var(--dark);
+}
+
+footer p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+#imageModal .modal-content {
+    background: transparent;
+}
+
+#imageModal .modal-body {
+    position: relative;
+}
+
+#modalImage {
+    width: 100%;
+    max-height: 85vh;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.hero h1 {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero p {
+    animation: fadeUp 0.8s ease 0.15s both;
+}
+
+.hero .btn {
+    animation: fadeUp 0.8s ease 0.3s both;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .navbar-nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    html {
+        scroll-padding-top: 65px;
+    }
+
+    .hero {
+        min-height: 75vh;
+
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .card-img-top {
+        height: 230px;
+    }
+
+    #faune-flore .card-img-top {
+        height: 250px;
+    }
+
+    .activity-card .card-img-top {
+        height: 230px;
+    }
+
+    .gallery-image {
+        height: 250px;
+    }
+
+}
+
+
+/* =========================================================
+   PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+
+    .gallery-image {
+        height: 230px;
+    }
+
+}
